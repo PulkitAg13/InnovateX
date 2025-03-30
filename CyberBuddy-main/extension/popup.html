@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberGuard Assistant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+
+<body>
+    <div class="binary-pattern"></div>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1><i class="fas fa-shield-alt"></i>CyberGuard v2.0<span class="status-indicator"></span></h1>
+            <small>SECURE COMMUNICATION CHANNEL</small>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <div class="message bot-message">
+                SYSTEM INITIALIZED. Cybersecurity protocols active.
+            </div>
+            <div style="padding: 8px; margin: 5px 0px; border-radius: 5px; background: rgb(225, 245, 254);">Bot: Hi, I
+                am your Cyber Buddy. How can I help you?</div>
+        </div>
+
+        <div class="encryption-indicator">
+            <i class="fas fa-lock"></i> End-to-End Encrypted | Protocol: AES-256
+        </div>
+
+        <div class="security-stats">
+            <div class="stat-item">
+                <i class="fas fa-shield-alt"></i>
+                <span>Threat Level: Low</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-wifi"></i>
+                <span>Connection: Secure</span>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <div class="input-group">
+                <input type="text" id="user-input" placeholder="Enter command..." autocomplete="off">
+            </div>
+            <div class="action-buttons">
+                <button id="send-btn">
+                    <i class="fas fa-terminal"></i>
+                    Execute
+                </button>
+                <button id="verify-link-btn">
+                    <i class="fas fa-fingerprint"></i>
+                    Scan
+                </button>
+                <button id="report-link-btn">
+                    <i class="fas fa-radiation"></i>
+                    Report
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
