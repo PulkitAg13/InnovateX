@@ -4,6 +4,7 @@ import time
 import google.generativeai as genai
 import requests
 import logging
+import re
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
@@ -52,11 +53,31 @@ def chat():
 
     try:
         model = genai.GenerativeModel("gemini-2.0-flash")
-        response = model.generate_content(user_message)
+
+        # Improved prompt for better response formatting
+        prompt = f"""
+        You are Cyber Buddy, an AI chatbot that provides **short, structured, and engaging** responses.  
+        Use **bullet points**, **bold text**, and **clear formatting**.  
+
+        Example:  
+        **Question:** How does encryption work?  
+        **Answer:**  
+        - Encryption protects data by converting it into a secure format. 🔐  
+        - Uses **public and private keys** for decryption.  
+        - Common methods: **AES, RSA, SHA-256 hashing.**  
+
+        Now, answer this: {user_message}
+        """
+
+        response = model.generate_content(prompt)
         bot_response = response.text.strip()
+
+        # Convert Markdown-style bold (**bold**) to HTML bold (<strong>bold</strong>)
+        bot_response = re.sub(r"\*\*(.*?)\*\*", r"<strong>\1</strong>", bot_response)
+
     except Exception as e:
         logger.error(f"Error generating response: {e}")
-        bot_response = f"⚠️ Error: {str(e)}"
+        bot_response = "⚠️ Sorry, I couldn't process your request right now. Please try again later."
 
     return jsonify({"response": bot_response})
 
