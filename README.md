@@ -43,6 +43,8 @@ Cyber Buddy is a security-focused project that includes a Google Chrome Extensio
 - Integrate more AI models for advanced cybersecurity threat detection.
 
 ## 📄 License
+This project is open-source and licensed under the **MIT License**.  
+See the [LICENSE](LICENSE) file for more details.
 
 ## 👥 Contributors
 - Team **GreenHackers**
