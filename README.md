@@ -45,7 +45,7 @@ Cyber Buddy is a security-focused project that includes a Google Chrome Extensio
 ## 📄 License
 
 ## 👥 Contributors
-By team GREEN HACKERS
+- Team **GreenHackers**
 
 ## 📞 Contact
 - [Pulkit Agrawal](https://www.linkedin.com/in/pulkitag13/)
