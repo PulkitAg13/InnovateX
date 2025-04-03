@@ -43,7 +43,7 @@ Cyber Buddy is a security-focused project that includes a Google Chrome Extensio
 - Integrate more AI models for advanced cybersecurity threat detection.
 
 ## ⚠NOTE
-- You need to generate your **Google-Gemnai-API-Key** and **Google-Safe-Browsing-API-Key** then replace them to the desired location in [Backend](server.py)
+- You need to generate your own **Google-Gemnai-API-Key** and **Google-Safe-Browsing-API-Key** then replace them to the desired location in [Backend](server.py)
 
 ## 📄 License
 This project is open-source and licensed under the **MIT License**.  
