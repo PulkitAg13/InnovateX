@@ -41,7 +41,7 @@ init_db()
 GENAI_API_KEY = "your-google-gemnai-api-key"
 genai.configure(api_key=GENAI_API_KEY)
 
-GOOGLE_SAFE_BROWSING_API_KEY = "AIzaSyBk4D_mMVlntpc4C_lkew7tCLvzsczL68A"
+GOOGLE_SAFE_BROWSING_API_KEY = "your-google-safe-browsing-api"
 
 
 @app.route("/chat", methods=["POST"])
