@@ -38,7 +38,7 @@ def init_db():
 init_db()
 
 # Set API Keys
-GENAI_API_KEY = "AIzaSyD40gsQfI-mxCmFs6ode-PkREoKL54pLLA"
+GENAI_API_KEY = "your-google-gemnai-api-key"
 genai.configure(api_key=GENAI_API_KEY)
 
 GOOGLE_SAFE_BROWSING_API_KEY = "AIzaSyBk4D_mMVlntpc4C_lkew7tCLvzsczL68A"
